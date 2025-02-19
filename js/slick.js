@@ -19,7 +19,7 @@ $(function () {
 
 
 $(function () {
-  $('.reviews-list').slick({
+  $('.features-list').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -27,13 +27,14 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 3500,
     speed: 1000,
-    dots: true,
+    dots: false,
     centerMode: true,
     cssEase: 'linear',
     prevArrow: '.reviews-list-left',
     nextArrow: '.reviews-list-right',
   });
 });
+
 
 
 

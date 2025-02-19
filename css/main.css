@@ -112,9 +112,7 @@ a {
   z-index: 5;
   background: transparent;
   display: flex;
-  height: 64px;
-  background: #297d17;
-  box-shadow: 4px 7px 9px 0px #00000040;
+  height: 60px;
 }
 .header__background {
   position: absolute;
@@ -126,7 +124,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: #297d17;
+  background: #497500;
   box-shadow: 4px 7px 9px 0px #00000040;
 }
 .header.is-open .header__background {
@@ -178,7 +176,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 12px;
+  padding: 10px;
   position: relative;
 }
 
@@ -202,30 +200,25 @@ a {
 
   border-radius: 0px 0px 20px 20px;
   gap: 28px;
-  background: #ffc16b;
-  box-shadow: 0px 9px 16px 0px #00000040;
+  background: #497500;
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Lora;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19.8px;
+  letter-spacing: -1%;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: #482600;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
 }
 .navigation__link:hover,
 .navigation__link:focus {
-  padding: 12px 24px 12px 24px;
-  border: 2px solid #297d17;
-  border-radius: 20px;
-  color: #297d17;
+  font-size: 20px;
 }
 .header.is-open {
   background-color: transparent;
@@ -245,8 +238,8 @@ a {
   .header {
     width: 100%;
 
-    height: 90px;
-    padding: 10px 20px 10px 0;
+    height: 48px;
+    padding: 10px 0px 10px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -281,7 +274,7 @@ a {
 
     padding-block: 0;
     flex: 1;
-    gap: 13px;
+    gap: 90px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -289,22 +282,15 @@ a {
     justify-content: center;
   }
   .navigation__link {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #fae599;
-    padding: 12px 24px 12px 24px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19.8px;
+    letter-spacing: -1%;
+    color: rgba(24, 27, 29, 1);
     text-decoration: none;
   }
-  .navigation__link:hover,
-  .navigation__link:focus {
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    color: #ffffff;
-  }
+
   .header__icon-home-img {
     display: none;
   }
@@ -384,224 +370,39 @@ a {
     width: 500px;
   }
 }
-.why {
-  width: 375px;
-  height: 1085px;
-
-  margin: auto;
-  padding: 77px 15px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/why/Why\ Choose\ Merge\ Food\ -\ Chef\ Decoration_.png");
-}
-
-.why-list {
-  padding-top: 67px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.why-item {
-  width: 343px;
-  height: 150px;
-  padding: 31px 16px;
-  border-radius: 20px;
-  background: #ffffff99;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.why-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.why-text {
-  padding-top: 8px;
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-@media screen and (min-width: 1200px) {
-  .why {
-    width: 1440px;
-    height: 700px;
-
-    margin: auto;
-    padding: 91px 189px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/img/why/Why\ Choose\ Merge\ Food\ -\ Chef\ Decoration_\ \(1\).png");
-  }
-
-  .why-list {
-    padding-top: 73px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: center;
-    gap: 32px;
-    flex-wrap: wrap;
-    width: 1062px;
-    height: 412px;
-  }
-  .why-item {
-    width: 515px;
-    height: 116px;
-    padding: 20px;
-    border-radius: 20px;
-    background: #ffffff99;
-    display: flex;
-    gap: 33px;
-    align-items: center;
-  }
-
-  .why-text-bold {
-    font-family: Lora;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .why-text {
-    font-family: Lora;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-}
-.uniqueness {
-  width: 375px;
-  height: 868px;
-
-  margin: auto;
-  padding: 64px 16px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/uniqueness/What\ Makes\ the\ Game\ Unique_.png");
-}
-
-.uniqueness-list {
-  padding-top: 54px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.uniqueness-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.uniqueness-text {
-  padding-top: 12px;
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-@media screen and (min-width: 1200px) {
-  .uniqueness {
-    width: 1440px;
-    height: 700px;
-
-    margin: auto;
-    padding: 72px 408px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/img/uniqueness/What\ Makes\ the\ Game\ Unique_\ \(1\).png");
-  }
-
-  .uniqueness-list {
-    padding-top: 54px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .uniqueness-text-bold {
-    font-family: Lora;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .uniqueness-text {
-    padding-top: 12px;
-    font-family: Lora;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-}
 .about {
-  padding: 64px 16px 0px;
+  padding: 80px 28px 0px;
   margin: auto;
   width: 375px;
-  height: 574px;
+  height: 1689px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/about/About\ the\ Game.png");
+  background-image: url("/image/about/Game\ description.png");
 }
 
 .about-title {
-  font-family: Lora;
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 26.4px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 39.6px;
+  letter-spacing: -1%;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  -webkit-text-stroke: 1px#FFFFFF99;
-  color: #297d17;
+  color: rgba(2, 155, 181, 1);
+  text-transform: uppercase;
 }
 
 .about-text {
-  font-family: Lora;
-  font-size: 16px;
+  font-family: Poppins;
   font-weight: 400;
-  line-height: 22.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  padding: 69px 0px 0;
+  font-size: 18px;
+  line-height: 25.56px;
+  letter-spacing: 0%;
+  padding: 32px 0px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .about-text-bold {
   font-family: Lora;
@@ -614,38 +415,29 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 66px 408px 0;
-    margin: auto;
+    padding: 140px 180px 0;
     width: 1440px;
-    height: 493px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    background-image: url("/img/about/About\ the\ Game\ \(1\).png");
+    height: 856px;
+    background-image: url("/image/about/Game\ description\ \(1\).png");
   }
 
   .about-title {
-    font-family: Lora;
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 38.4px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52.8px;
+    letter-spacing: -1%;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
 
   .about-text {
-    font-family: Lora;
-    font-size: 18px;
+    font-family: Poppins;
     font-weight: 400;
-    line-height: 25.2px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    padding: 77px 0 0;
+    font-size: 18px;
+    line-height: 25.56px;
+    letter-spacing: 0%;
+    padding: 92px 0 0;
+    width: 791px;
   }
   .about-text-bold {
     font-family: Lora;
@@ -657,355 +449,112 @@ a {
     text-decoration-skip-ink: none;
   }
 }
-.how {
-  width: 375px;
-  height: 1191px;
-
-  margin: auto;
-  padding: 64px 16px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/how/How\ to\ Play.png");
-}
-
-.how-list {
-  padding-top: 54px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.how-item {
-  width: 343px;
-  height: 192px;
-}
-.how-img {
-  margin: auto;
-}
-.how-text-bold {
-  padding: 12px 0;
-
-  font-family: Lora;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.how-text {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21.6px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .how {
-    width: 1440px;
-    height: 700px;
-    margin: auto;
-    padding: 72px 244px;
-    background-image: url("/img/how/How\ to\ Play\ \(1\).png");
-  }
-  .how-list {
-    padding-top: 39px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 33px;
-    justify-content: center;
-  }
-  .how-item {
-    width: 295px;
-    height: 192px;
-  }
-  .how-img {
-    margin: 0;
-  }
-
-  .how-text-bold {
-    font-family: Lora;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .how-text {
-    font-family: Lora;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-}
-
-.characters {
-  padding: 53px 16px 0;
-  margin: auto;
-  width: 375px;
-  height: 1021px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/characters/Characters.png");
-}
-
-.characters-list {
-  display: flex;
-  flex-direction: column;
-  padding-top: 52px;
-
-  gap: 32px;
-}
-.characters-item-two {
-  padding-top: 304px;
-}
-.characters-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  color: #751a09;
-}
-.characters-text {
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding-top: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .characters {
-    padding: 72px 189px 81px;
-    margin: auto;
-    width: 1440px;
-    height: 700px;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/img/characters/Characters\ \(1\).png");
-  }
-
-  .characters-list {
-    display: flex;
-    flex-direction: row;
-    padding-top: 79px;
-    align-items: center;
-    justify-content: center;
-    gap: px;
-    column-gap: 470px;
-    flex-wrap: wrap;
-    width: 1062px;
-    height: 559px;
-  }
-  .characters-item {
-    width: 296px;
-  }
-  .characters-item-two {
-    padding-top: 0px;
-  }
-  .characters-text-bold {
-    font-family: Lora;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    color: #751a09;
-  }
-  .characters-text {
-    font-family: Lora;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    padding-top: 8px;
-  }
-}
 .reviews {
   width: 375px;
-  height: 490px;
 
   margin: auto;
-  padding: 64px 16px 0;
+  padding: 40px 0px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  background-image: url("/img/reviews/_User\ Reviews.png");
+  background-position: center;
+  background-image: url("/image/reviews/Reviews.png");
 }
 
 .reviews-list {
-  width: auto;
-  padding-top: 54px;
-  padding-bottom: 29px;
-  margin: auto;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
 }
 .reviews-item {
-  margin: 0 5px;
+  width: 357px;
+  height: 316px;
+  margin: auto;
+  padding: 51px 31px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/reviews/Card\ \(2\).png");
 }
-.reviews-item-top {
-  display: flex;
-  gap: 15px;
-  align-items: center;
 
-  height: 60px;
-}
 .reviews-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.04px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ffffff;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(149, 153, 157, 1);
 }
 .reviews-text {
-  width: 343px;
-  height: 160px;
-  padding: 55px 16px 0;
-  border-radius: 10px;
-  background: #fff8f3b2;
-  backdrop-filter: blur(4px);
-  box-shadow: 0px 2px 6px 0px #0d427b40;
-  font-family: Lora;
-  font-size: 16px;
+  font-family: Poppins;
   font-weight: 400;
-  line-height: 19.2px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #0a1346;
-  margin-top: 8px;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: 0%;
+  gap: 295px;
+  margin: 24px 0 40px;
 }
-
-.gallery-button-container {
-  display: none;
+.reviews-img {
+  margin: auto;
 }
 
 @media screen and (min-width: 1200px) {
-  .gallery-button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-  }
-
-  .gallery-button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    -webkit-transition: scale 0.3s ease;
-    transition: scale 0.3s ease;
-  }
-
-  .gallery-button:hover {
-    scale: 120%;
-  }
   .reviews {
     width: 1440px;
-    height: 595px;
-
-    margin: auto;
-    padding: 84px 80px 0;
-    background-image: url("/img/reviews/User\ Reviews.png");
+    height: 815px;
+    padding: 80px 100px 0;
   }
+
   .reviews-list {
-    width: auto;
-    padding-top: 83px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-
-  .reviews-text-bold {
-    font-family: Lora;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 25.6px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .reviews-text {
-    width: 405px;
-    height: 118px;
-    padding: 30px 16px 0;
-    font-family: Lora;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+  .reviews-item {
+    width: 411px;
+    height: 297px;
+    padding: 51px 31px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/image/reviews/Card\ \(3\).png");
   }
 }
 
 .faq {
-  padding: 64px 16px 30px;
+  padding: 40px 16px;
   margin: auto;
   width: 375px;
-  min-height: 866px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-image: url("/img/faq/FAQ.png");
 }
 .faq-container {
-  padding-top: 54px;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin: auto;
+  gap: 24px;
 }
 
 .faq-item {
-  background: #ffe6c4;
-  border: 2px solid #297d17;
-  padding: 16px;
-  border-radius: 12px;
+  border-radius: 20px;
+  padding: 24px;
+  background: rgba(134, 73, 166, 1);
+  border: 8px solid rgba(200, 118, 62, 1);
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    -3px -3px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .faq-question {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #297d17;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26.4px;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
 }
 
 .toggle-button {
@@ -1018,83 +567,42 @@ a {
 .faq-answer {
   display: none;
   padding-top: 16px;
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.56px;
+  letter-spacing: 0%;
+  color: rgba(210, 178, 225, 1);
 }
 @media screen and (min-width: 1200px) {
   .faq {
-    padding: 72px 300px;
-    margin: auto;
+    padding: 80px 100px 100px;
+
     width: 1440px;
-    background-image: url("/img/faq/FAQ\ \(1\).png");
   }
   .faq-container {
-    width: 840px;
-    padding-top: 43px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: auto;
-  }
-
-  .faq-question {
-    font-family: Lora;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-
-  .toggle-button {
-    background: none;
-    border: none;
-
-    cursor: pointer;
-  }
-
-  .faq-answer {
-    display: none;
-
-    font-family: Lora;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    padding-top: 60px;
   }
 }
 .gallery {
   width: 375px;
-  height: 862px;
 
   margin: auto;
-  padding: 64px 16px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/gallery/Gallery.png");
+  padding: 40px 16px;
 }
 
 .gallery__list {
   width: auto;
-  padding-top: 65px;
-
+  padding-top: 32px;
   margin: auto;
 }
 .gallery__item {
-  width: 343px;
-  height: 610px;
+  width: 321px;
+  height: 548px;
+
   overflow: hidden;
   position: relative;
-  margin: 0 10px;
+  margin: 0 4px;
 }
 
 .gallery__image {
@@ -1107,113 +615,74 @@ a {
 @media screen and (min-width: 1200px) {
   .gallery {
     width: 1440px;
-    height: 1058px;
-
-    margin: auto;
-    padding: 72px 0 0;
-    background-image: url("/img/gallery/12657-NP185O\ 1.png");
+    padding: 80px 100px 100px;
   }
 
   .gallery__item {
-    width: 406px;
-    height: 721.78px;
-    overflow: hidden;
-    position: relative;
+    width: 364px;
+    height: 621.2266845703125px;
+    margin: 0 12px;
   }
 
   .gallery__list {
     width: auto;
-    padding: 82px 0 42px;
+    padding: 60px 0 0px;
   }
 }
 .features {
   width: 375px;
-
   margin: auto;
-  padding: 64px 16px 89px;
-  background: #ffbb5b;
+  padding: 40px 0 40px 16px;
 }
 
 .features-list {
-  padding-top: 64px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 16px;
-  row-gap: 32px;
+  padding-top: 32px;
 }
 .features-item {
-  width: 163px;
-  height: 230px;
+  width: 336px;
+  height: 419px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/features/Card.png");
+  padding: 51px 24px 0;
 }
 .features-img {
-  margin: 16px auto;
+  margin: auto;
 }
 .features-text-bold {
-  height: 44px;
-
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.6px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26.4px;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+  padding: 40px 0 16px;
+  color: rgba(255, 255, 255, 1);
 }
 .features-text {
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19.2px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.56px;
+  letter-spacing: 0%;
+  color: rgba(210, 178, 225, 1);
 }
 
 @media screen and (min-width: 1200px) {
   .features {
     width: 1440px;
-
-    margin: auto;
-    padding: 72px 270px 101px;
-    background: #ffbb5b;
+    padding: 80px 100px 100px;
   }
 
   .features-list {
-    padding-top: 85px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 34px;
+    padding-top: 60px;
   }
   .features-item {
-    width: 187px;
-    height: 236px;
-  }
-  .features-img {
-    margin: 16px auto;
-  }
-  .features-text-bold {
-    height: 44px;
-
-    font-family: Lora;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .features-text {
-    font-family: Lora;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.2px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    width: 412px;
+    height: 363px;
+    background-image: url("/image/features/Card\ \(1\).png");
+    padding: 52px 30px 0;
   }
 }
 .footer {
@@ -1438,12 +907,9 @@ a {
 .cookie-popup {
   position: fixed;
   bottom: 10px;
-  width: 335px;
-  border-radius: 20px;
-  padding: 30px;
+  width: 375px;
+  padding: 20px;
   background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(149, 49, 133, 1);
-  box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.06);
 
   text-align: center;
   z-index: 1000;
@@ -1452,48 +918,40 @@ a {
 }
 
 .cookie-popup-text-two {
-  font-family: Raleway;
-  font-size: 16px;
+  font-family: Poppins;
   font-weight: 400;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 25.56px;
+  letter-spacing: 0%;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  color: rgba(87, 78, 68, 1);
 }
 .cookie-button-container {
-  padding: 30px 0 0;
+  padding: 32px 0 0;
   margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 8px;
 }
 .cookie-button {
-  border: none;
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19.8px;
+  letter-spacing: -1%;
+  color: rgba(134, 73, 166, 1);
+  background: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  width: 167.5px;
+  border-radius: 4px;
+  padding: 16px 0;
 
-  color: rgba(87, 78, 68, 1);
-  border: none;
-  background-color: transparent;
+  border: 1px solid rgba(134, 73, 166, 1);
 }
 #accept-cookies {
-  width: 167px;
-
-  padding: 18px 26px 18px 26px;
+  background: rgba(134, 73, 166, 1);
   color: rgba(255, 255, 255, 1);
-  border-radius: 56px;
-  background: rgba(149, 49, 133, 1);
-
-  box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
 }
 .close-popup {
   position: absolute;
@@ -1504,29 +962,27 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .cookie-popup-text-two {
-    font-family: Raleway;
-    font-size: 18px;
+    font-family: Poppins;
     font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-size: 18px;
+    line-height: 25.56px;
+    letter-spacing: 0%;
 
-    width: 648px;
+    width: 837px;
   }
   .cookie-button-container {
     padding: 0;
     margin: auto;
     display: flex;
-    flex-direction: row-reverse;
-    gap: 40px;
+    flex-direction: row;
+    gap: 24px;
   }
   .cookie-popup {
     position: fixed;
     bottom: 10px;
-    width: 1272px;
+    width: 1440px;
 
-    padding: 52px;
+    padding: 32px;
     display: none;
   }
 
